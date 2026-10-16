@@ -1,0 +1,6 @@
+{
+  "name": "CertiChain — Blockchain Certificate Verification",
+  "description": "Tamper-evident university academic credential issuance and verification platform using cryptographic SHA-256 fingerprints and blockchain proofs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

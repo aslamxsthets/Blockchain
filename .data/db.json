@@ -1,0 +1,310 @@
+{
+  "users": [
+    {
+      "id": "USER-ADMIN-001",
+      "name": "Dr. Arthur Sterling",
+      "email": "admin@apex.edu",
+      "passwordHash": "$2b$10$hHxtn4wrebibLfvWBu6TcOGP6MgaJrGu10rqyyR.rYtSgzmVEaEyK",
+      "role": "admin",
+      "accountStatus": "active",
+      "institutionId": "INST-APEX-001",
+      "createdAt": "2026-10-16T06:42:06.730Z",
+      "updatedAt": "2026-10-16T06:42:06.730Z"
+    },
+    {
+      "id": "USER-ISSUER-001",
+      "name": "Elena Rostova",
+      "email": "issuer@apex.edu",
+      "passwordHash": "$2b$10$hHxtn4wrebibLfvWBu6TcOGP6MgaJrGu10rqyyR.rYtSgzmVEaEyK",
+      "role": "issuer",
+      "accountStatus": "active",
+      "institutionId": "INST-APEX-001",
+      "createdAt": "2026-10-16T06:42:06.730Z",
+      "updatedAt": "2026-10-16T06:42:06.730Z"
+    },
+    {
+      "id": "USER-STUDENT-001",
+      "name": "Alex Chen",
+      "email": "alex.chen@student.apex.edu",
+      "passwordHash": "$2b$10$hHxtn4wrebibLfvWBu6TcOGP6MgaJrGu10rqyyR.rYtSgzmVEaEyK",
+      "role": "student",
+      "accountStatus": "active",
+      "studentId": "STU-2026-9041",
+      "createdAt": "2026-10-16T06:42:06.730Z",
+      "updatedAt": "2026-10-16T06:42:06.730Z"
+    },
+    {
+      "id": "USER-STUDENT-002",
+      "name": "Maria Santos",
+      "email": "maria.santos@student.apex.edu",
+      "passwordHash": "$2b$10$hHxtn4wrebibLfvWBu6TcOGP6MgaJrGu10rqyyR.rYtSgzmVEaEyK",
+      "role": "student",
+      "accountStatus": "active",
+      "studentId": "STU-2026-9042",
+      "createdAt": "2026-10-16T06:42:06.730Z",
+      "updatedAt": "2026-10-16T06:42:06.730Z"
+    }
+  ],
+  "institutions": [
+    {
+      "id": "INST-APEX-001",
+      "name": "Apex Institute of Technology & Science",
+      "code": "APEX",
+      "officialDomain": "apex.edu",
+      "authorizedIssuerAddresses": [
+        "0x00796ac74a2D4CEb20D9FedC71F300e283008839",
+        "0xA175DED801e9555F4d9320DdADc4367f799bEe21"
+      ],
+      "profileDetails": {
+        "chancellor": "Dr. Evelyn Vance, Ph.D.",
+        "accreditation": "Global Engineering & Academic Accreditation Board (GEAAB #8892)",
+        "address": "450 Innovation Parkway, Cambridge, MA 02142",
+        "logoBadgeText": "AITS"
+      },
+      "status": "active",
+      "createdAt": "2026-10-16T06:42:06.730Z",
+      "updatedAt": "2026-10-16T06:42:06.730Z"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "CERT-2026-APEX-1001",
+      "studentId": "STU-2026-9041",
+      "studentName": "Alex Chen",
+      "studentUserId": "USER-STUDENT-001",
+      "issuerId": "USER-ADMIN-001",
+      "issuerName": "Dr. Arthur Sterling",
+      "institutionId": "INST-APEX-001",
+      "institutionName": "Apex Institute of Technology & Science",
+      "degreeName": "Bachelor of Science in Computer Science",
+      "department": "School of Computing & Data Systems",
+      "graduationYear": 2026,
+      "gradeClassification": "First Class Honours (Summa Cum Laude)",
+      "issueDate": "2026-06-15",
+      "canonicalVersion": "1.0.0",
+      "fingerprintAlgorithm": "SHA-256",
+      "fingerprint": "e1f912fa35d7c07f6e77332bcc33c027740a847d431333b3ea29f84a030f383d",
+      "issuanceState": "issued",
+      "transactionHash": "0x649ff7d29f73cc22902fd6895ae4c583a1f40e312da6d613d011978a8800e124",
+      "blockNumber": 3,
+      "blockchainNetwork": "Local Devnet (Chain ID: 31337)",
+      "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "issuedAt": "2026-06-15T10:00:00.000Z",
+      "qrCodeDataUrl": "data:image/png;base64,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D36zruQN5sGprmRiHpwyD97SlezMg6e6kol5cKoreUNXMjEP3rAQEbnUQkTkUgsRkUstREQu9cOLzIOnupKnupKdeTDpSnbmwVvMg1PmwaQr2XUlT5kHT5kH39SVTMyDU13JxDzYdSUT82DXlUzMg1NdycQ8OGUenDIP3tKV7MyDb1qIiFxqISJyqYWIyKUWIiKXWoiIXOoH+deZB7uu5DczD3ZdyW9gHky6kp15MOlKdubBJ7qSnXkw6Up25sGkK5mYB7uu5KmuZGIe7LqSiXlwqiuZmAenupKJefDEQkTkUgsRkUstREQutRARudQPFzAPdl3JU13JKfPgE13JE+bBJ7qSJ8yDt3QlT5kHu65kYh58k3nwVFcyMQ9OdSXf1JXszIOJefCGhYjIpRYiIpdaiIhcaiEicqmFiMilfnhRV/IbdCU782DSley6kol5MOlKvsk8ONWVPGUe7LqST5gHu65kYh6c6kpOmQff1JX8BubBqa7kE13JE13JNy1ERC61EBG51EJE5FILEZFLLURELvXDv8A8+K/pSibmwamu5FRX8pR5MOlKnjIPTnUlT3UlT3UlO/Ng0pXsupK3mAe7rmRiHpzqSj7RlezMg0lX8k3mwamuZGIe7LqSUwsRkUstREQutRARudRCRORSf/39D0RELrQQEbnUQkTkUgsRkUstREQutRARudRCRORSCxGRSy1ERC61EBG51EJE5FL/B0lomOgfTBQwAAAAAElFTkSuQmCC",
+      "downloadCount": 7
+    },
+    {
+      "id": "CERT-2026-APEX-1002",
+      "studentId": "STU-2026-9042",
+      "studentName": "Maria Santos",
+      "studentUserId": "USER-STUDENT-002",
+      "issuerId": "USER-ADMIN-001",
+      "issuerName": "Dr. Arthur Sterling",
+      "institutionId": "INST-APEX-001",
+      "institutionName": "Apex Institute of Technology & Science",
+      "degreeName": "Master of Science in Data Intelligence",
+      "department": "Faculty of Informatics & Artificial Intelligence",
+      "graduationYear": 2026,
+      "gradeClassification": "With Distinction (GPA 3.94)",
+      "issueDate": "2026-05-20",
+      "canonicalVersion": "1.0.0",
+      "fingerprintAlgorithm": "SHA-256",
+      "fingerprint": "f85e1b87a0416fc1aabda5a42a8dea875950fbae103b5a8d705b847a98188375",
+      "issuanceState": "revoked",
+      "transactionHash": "0xf8a44dda4c239a705dc532004cd271befd7b78b8b2e41fe9cf0d3190c06341aa",
+      "blockNumber": 4,
+      "blockchainNetwork": "Local Devnet (Chain ID: 31337)",
+      "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "issuedAt": "2026-05-20T14:30:00.000Z",
+      "revokedAt": "2026-10-16T06:42:07.650Z",
+      "revocationReason": "Disciplinary sanction: academic integrity violation identified in graduate thesis",
+      "revokedBy": "Dr. Arthur Sterling",
+      "qrCodeDataUrl": "data:image/png;base64,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pSt5qys51ZXszIMnzINdV3LKPHirK3mrK5mYB6e6kre6klPmwScsREQutRARudRCRORSCxGRSy1ERC71xQeZB5OuZGceTMyD79SV/FRdyXcyDyZdyc48mJgH38k8ONWVTMyD79SVTMyDU+bBpCt5wzz4FPNg15VMupKJefDGQkTkUgsRkUstREQutRARudRCRORSX3xQVzIxD97oSt4yD051JZOu5FRX8oR5sDMPJl3Jzjx4qyuZmAe7ruQJ8+BUVzIxDz6hK5mYB9+pK3nLPNh1JZOuZGcePNGV7MyDSVeyMw+e6EreWIiIXGohInKphYjIpRYiIpf69fsPHjAPTnUln2AeTLqSiXlwqit5yzzYdSXfyTx4oiv5BPPgVFfyE5gHk67kDfNg0pVMzINP6EreMg++U1cyMQ92XcmphYjIpRYiIpdaiIhcaiEicqmFiMilvvgLupInzINdVzIxD3ZdycQ8+Am6kn+tK5mYB6fMg1NdyaQrmZgHO/Ng0pVMzINdVzIxDz7BPPgJupJT5sGkK9mZB090JafMg11X8kRX8sZCRORSCxGRSy1ERC61EBG51K/ff/CAefBWV7IzDyZdyc48mHQlp8yDU13JT2AefEpXcso82HUlT5gHu67kCfPgja7kCfNg15VMzINTXcn/GvPgVFcyMQ8+oSs5tRARudRCRORSCxGRSy1ERC61EBG51K/ff/CSeTDpSibmwamu5JR5MOlKTpkHu65kYh58p65kYh7supKJeXCqK5mYB5/QlbxlHky6kp158ERX8oZ58ERX8pZ5sOtKJubBT9WVTMyDXVdyaiEicqmFiMilFiIil1qIiFxqISJyqS/+gq5kYh5MupKdeXDKPJh0JRPzYNeVTLqSnXkw6UpOmQef0pWc6kom5sF36kp25sFbXclbXcl/RVfyCV3JxDw41ZX8awsRkUstREQutRARudRCRORSXzxkHuy6kre6klNdycQ8OGUeTLqST+hKJubBpCvZmQeTruStrmRnHky6kp158FZX8p26kol5MOlKTpkHb5kH/2Xmwa4rmZgHn7AQEbnUQkTkUgsRkUstREQutRARudQXD3Ulp7qSt8yDU13JKfPgVFfyhHmw60qeMA9OmQe7ruQJ8+CnMg9+AvPgE7qSU+bBT9aVnDIPTnUlE/PgjYWIyKUWIiKXWoiIXGohInKpL/4C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",
+      "downloadCount": 1
+    },
+    {
+      "id": "CERT-2026-APEX-1003",
+      "studentId": "STU-2026-9041",
+      "studentName": "Alex Chen",
+      "studentUserId": "USER-STUDENT-001",
+      "issuerId": "USER-ADMIN-001",
+      "issuerName": "Dr. Arthur Sterling",
+      "institutionId": "INST-APEX-001",
+      "institutionName": "Apex Institute of Technology & Science",
+      "degreeName": "Professional Diploma in Cryptographic Engineering",
+      "department": "School of Computing & Data Systems",
+      "graduationYear": 2026,
+      "gradeClassification": "High Distinction",
+      "issueDate": "2026-07-01",
+      "canonicalVersion": "1.0.0",
+      "fingerprintAlgorithm": "SHA-256",
+      "fingerprint": "1104c088f33a97e9bcadb82e6b8ed14c98b656e46e72c8229a8105d4c7591cdd",
+      "issuanceState": "issued",
+      "transactionHash": "0x27b27f9c467ffd0109cdd5666df35da3be2675c3d3e3392f19ddafc3e27c6986",
+      "blockNumber": 2,
+      "blockchainNetwork": "Local Devnet (Chain ID: 31337)",
+      "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "issuedAt": "2026-07-01T09:15:00.000Z",
+      "qrCodeDataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAYAAADNkKWqAAAAAklEQVR4AewaftIAABOwSURBVO3BwY0lyY5FwVOOFIBL6kD9RaEOXFKDmgJm5yA+/CE6srPar9mv338gInKhhYjIpRYiIpdaiIhcaiEicqmFiMilFiIil1qIiFxqISJyqYWIyKUWIiKXWoiIXOqLD5kHP1VXMjEP3tCVnDIPJl3JxDw41ZXszINJV/KUebDrSr6bebDrSibmwa4r+YR58IauZGIenOpKJubBrit5yjz4qbqSUwsRkUstREQutRARudRCRORSX/wDupLvZB58p65kYh5MupJdVzIxDyZdySnzYNeVPGUenDIPnupKJubBU13JzjyYdCWTrmRnHky6kp15MDEPJl3JG8yDSVfyVFfyncyDJxYiIpdaiIhcaiEicqmFiMilFiIil/riRebBU13JG7qSiXmwMw8mXckp82DSlUzMg39bV/IW8+Df1pVMzINJV3LKPNh1JRPzYGIenOpKJl3Jzjz4TubBU13JGxYiIpdaiIhcaiEicqmFiMilFiIil/riAl3Jzjx4yjz4Tl3JKfPgO3UlE/Pgqa7kKfPgKfNg15VMzINTXclT5sGprmRiHuy6kv+yhYjIpRYiIpdaiIhcaiEicqkvLtWVTMyDXVfyFvNg0pW8oSuZmAe7ruSUefCUefCdupKnzINT5sFTXclbupLbLERELrUQEbnUQkTkUgsRkUstREQu9cWLupKfwDw41ZXszINPdCVPmQdPdCUT82DSlezMg0lXcqoreco8ONWVvMU82HUlE/Ng15VMzINJV/Jf0JX8VAsRkUstREQutRARudRCRORSX/wDzIO/TVcyMQ92XcnEPDhlHky6kol5sOtKJubB38Y82HUln+hKdubBpCvZmQeTruSnMg8mXcnEPDhlHuy6kk+YB3+ThYjIpRYiIpdaiIhcaiEicqmFiMilvvhQV/JfYB481ZWc6kp+MvPglHnwVFfyhq5kYh6cMg/eYB58wjz4qbqS/4KFiMilFiIil1qIiFxqISJyqYWIyKV+/f6Dl5gHT3UlO/Ng0pVMzINdVzIxD57qSk6ZB091JTvzYNKVnDIPbtSVnDIPnupKvpN58J26klPmwVNdyamFiMilFiIil1qIiFxqISJyqS8+ZB6c6kom5sGuKznVlUzMg6e6kp15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",
+      "downloadCount": 2
+    }
+  ],
+  "auditEvents": [
+    {
+      "id": "AUDIT-1792132926731-1",
+      "actorId": "SYSTEM",
+      "actorName": "CertiChain System Seeder",
+      "actorRole": "system",
+      "action": "ISSUER_AUTHORIZED",
+      "targetRecord": "INST-APEX-001",
+      "timestamp": "2026-10-16T06:42:06.730Z",
+      "correlationId": "INIT-BOOTSTRAP",
+      "metadata": {
+        "institutionName": "Apex Institute of Technology & Science"
+      }
+    }
+  ],
+  "verificationEvents": [
+    {
+      "certificateId": "CERT-2026-APEX-1001",
+      "resultCategory": "VERIFIED",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "blockNumber": 3
+      },
+      "id": "VERIFY-1792144268706-zfjze",
+      "timestamp": "2026-10-16T09:51:08.706Z"
+    },
+    {
+      "certificateId": "CERT-2026-APEX-1001",
+      "resultCategory": "VERIFIED",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "blockNumber": 3
+      },
+      "id": "VERIFY-1792143637774-lg299",
+      "timestamp": "2026-10-16T09:40:37.774Z"
+    },
+    {
+      "certificateId": "CERT-2026-APEX-1001",
+      "resultCategory": "VERIFIED",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "blockNumber": 3
+      },
+      "id": "VERIFY-1792143503275-u0ixu",
+      "timestamp": "2026-10-16T09:38:23.275Z"
+    },
+    {
+      "certificateId": "CERT-2026-APEX-1002",
+      "resultCategory": "REVOKED",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "reason": "Disciplinary sanction: academic integrity violation identified in graduate thesis",
+        "isRevokedOnChain": true,
+        "isRevokedInDb": true
+      },
+      "id": "VERIFY-1792142688607-z4uz2",
+      "timestamp": "2026-10-16T09:24:48.607Z"
+    },
+    {
+      "certificateId": "CERT-2026-APEX-1001",
+      "resultCategory": "VERIFIED",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "blockNumber": 3
+      },
+      "id": "VERIFY-1792133544613-rv062",
+      "timestamp": "2026-10-16T06:52:24.613Z"
+    },
+    {
+      "certificateId": "CERT-FAKE-999999",
+      "resultCategory": "NOT_FOUND",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "reason": "No database record exists for this identifier"
+      },
+      "id": "VERIFY-1792133466475-9a13j",
+      "timestamp": "2026-10-16T06:51:06.475Z"
+    },
+    {
+      "certificateId": "CERT-2026-APEX-1001",
+      "resultCategory": "VERIFIED",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "blockNumber": 3
+      },
+      "id": "VERIFY-1792133456673-5zrsc",
+      "timestamp": "2026-10-16T06:50:56.673Z"
+    },
+    {
+      "certificateId": "CERT-FAKE-999",
+      "resultCategory": "NOT_FOUND",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "reason": "No database record exists for this identifier"
+      },
+      "id": "VERIFY-1792133273273-5h586",
+      "timestamp": "2026-10-16T06:47:53.273Z"
+    },
+    {
+      "certificateId": "CERT-2026-APEX-1002",
+      "resultCategory": "REVOKED",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "reason": "Disciplinary sanction: academic integrity violation identified in graduate thesis",
+        "isRevokedOnChain": true,
+        "isRevokedInDb": true
+      },
+      "id": "VERIFY-1792133273253-fbxba",
+      "timestamp": "2026-10-16T06:47:53.253Z"
+    },
+    {
+      "certificateId": "CERT-2026-APEX-1001",
+      "resultCategory": "VERIFIED",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "blockNumber": 3
+      },
+      "id": "VERIFY-1792133273178-p9aom",
+      "timestamp": "2026-10-16T06:47:53.178Z"
+    },
+    {
+      "certificateId": "CERT-FAKE-999",
+      "resultCategory": "NOT_FOUND",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "reason": "No database record exists for this identifier"
+      },
+      "id": "VERIFY-1792133158425-a1jkl",
+      "timestamp": "2026-10-16T06:45:58.425Z"
+    },
+    {
+      "certificateId": "CERT-2026-APEX-1002",
+      "resultCategory": "REVOKED",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "reason": "Disciplinary sanction: academic integrity violation identified in graduate thesis",
+        "isRevokedOnChain": true,
+        "isRevokedInDb": true
+      },
+      "id": "VERIFY-1792133129763-jte90",
+      "timestamp": "2026-10-16T06:45:29.764Z"
+    },
+    {
+      "certificateId": "CERT-2026-APEX-1001",
+      "resultCategory": "VERIFIED",
+      "requestSourceCategory": "DIRECT_LOOKUP",
+      "metadata": {
+        "blockNumber": 3
+      },
+      "id": "VERIFY-1792133124313-fo1er",
+      "timestamp": "2026-10-16T06:45:24.313Z"
+    }
+  ],
+  "systemConfig": {
+    "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "deployedAt": "2026-10-16T09:50:41.578Z",
+    "network": "Local Devnet (Chain ID: 31337)"
+  }
+}
